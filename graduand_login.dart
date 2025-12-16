@@ -121,13 +121,14 @@ class _GraduandLoginState extends State<GraduandLogin> {
               const SizedBox(height: 40),
               _buildInputField(
                 label: 'Username/Email',
-                /* label: 'Enter Username or Email' */
+                hintText: 'Enter your username or email',
                 controller: identifierController,
                 isObscure: false,
               ),
               const SizedBox(height: 20),
               _buildInputField(
                 label: 'Password',
+                hintText: 'Enter your password',
                 controller: passwordController,
                 isObscure: true,
               ),
@@ -228,6 +229,7 @@ class _GraduandLoginState extends State<GraduandLogin> {
 
   Widget _buildInputField({
     required String label,
+    required String hintText,
     required TextEditingController controller,
     required bool isObscure,
   }) {
@@ -246,7 +248,8 @@ class _GraduandLoginState extends State<GraduandLogin> {
           controller: controller,
           obscureText: isObscure,
           decoration: InputDecoration(
-            hintText: 'Type here....',
+            hintText: hintText, //MNOR change: improve clarity
+            //test showing the merge button
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10.0),
             ),

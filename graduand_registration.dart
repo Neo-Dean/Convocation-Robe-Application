@@ -41,6 +41,7 @@ class _GraduandRegistrationState extends State<GraduandRegistration> {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
             content: Text('Email must be a @siswa.unimas.my address')),
+        /*content: Text ('Email must be a matric number@siswa.unimas.my email address') */
       );
       return;
     }
