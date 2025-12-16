@@ -121,6 +121,7 @@ class _GraduandLoginState extends State<GraduandLogin> {
               const SizedBox(height: 40),
               _buildInputField(
                 label: 'Username/Email',
+                /* label: 'Enter Username or Email' */
                 controller: identifierController,
                 isObscure: false,
               ),
