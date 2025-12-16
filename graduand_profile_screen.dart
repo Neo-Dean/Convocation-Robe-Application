@@ -15,6 +15,7 @@ class _GraduandProfileScreenState extends State<GraduandProfileScreen> {
   String password = '';
   String phone_number = ''; // Assuming you have a phone field
   String token = '';
+  /*String matric number = '';*/
   bool isPasswordVisible = false;
   int userId = 0;
   final FlutterSecureStorage secureStorage = const FlutterSecureStorage();
